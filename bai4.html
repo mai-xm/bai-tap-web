@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư Viện Ảnh Tương Tác</title>
+    <style>
+        /* CSS cơ bản để bạn dễ nhìn */
+        .gallery { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        figure { border: 2px solid #ccc; padding: 10px; border-radius: 8px; transition: 0.3s; width: 250px; text-align: center; }
+        img { max-width: 100%; height: auto; border-radius: 4px; }
+        /* Hiệu ứng khi rê chuột hoặc dùng phím Tab chuyển vào */
+        figure:focus, figure:hover { border-color: #007BFF; background-color: #f0f7ff; outline: none; }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Bộ Sưu Tập Ảnh Của Tôi</h1>
+    
+    <div class="gallery">
+        <figure onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+            <img src="https://picsum.photos/id/10/250/180" alt="Cây cầu gỗ cổ kính bắc qua dòng sông phẳng lặng vào buổi sớm">
+            <figcaption>Phong cảnh 1</figcaption>
+        </figure>
+
+        <figure onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+            <img src="https://picsum.photos/id/20/250/180" alt="Góc bàn làm việc gọn gàng với máy tính xách tay và cuốn sổ tay">
+            <figcaption>Phong cảnh 2</figcaption>
+        </figure>
+
+        <figure onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+            <img src="https://picsum.photos/id/28/250/180" alt="Khu rừng thông xanh mướt trải dài dưới bầu trời xanh trong">
+            <figcaption>Phong cảnh 3</figcaption>
+        </figure>
+
+        <figure onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+            <img src="https://picsum.photos/id/36/250/180" alt="Chiếc đồng hồ túi cổ bằng đồng đặt trên nền gỗ nhám">
+            <figcaption>Phong cảnh 4</figcaption>
+        </figure>
+
+        <figure onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+            <img src="https://picsum.photos/id/48/250/180" alt="Ngọn núi cao phủ tuyết trắng xóa dưới ánh hoàng hôn vàng">
+            <figcaption>Phong cảnh 5</figcaption>
+        </figure>
+
+        <figure onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+            <img src="https://picsum.photos/id/60/250/180" alt="Một chiếc xe ô tô cổ màu đen đỗ bên lề đường thành phố">
+            <figcaption>Phong cảnh 6</figcaption>
+        </figure>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
